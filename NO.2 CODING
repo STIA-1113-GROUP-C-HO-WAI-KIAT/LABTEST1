@@ -9,8 +9,8 @@ public class LabTest2 {
 		int s;
 		double total;
 		
-		Scanner sc = new Scanner (System.in);
-		System.out.println("Enter the working hours:");//ENTER THE NUMBER OF ITEM
+            Scanner sc = new Scanner (System.in);
+	    System.out.println("Enter the working hours:");//ENTER THE NUMBER OF ITEM
 	    h = sc.nextInt();//ENTER THE NUMBER
 	    
 	    System.out.println("Enter the sales generated:");//ENTER THE PRICE OF ITEM
