@@ -1,0 +1,53 @@
+0%
+Enter the working hours:
+8
+Enter the sales generated:
+100
+Enter sales       :RM100
+Enter hours worked:8 hours
+
+Commission        :RM 0.00
+Daily wages       :RM 40.00
+
+
+
+
+5%
+Enter the working hours:
+8
+Enter the sales generated:
+200
+Enter sales       :RM200
+Enter hours worked:8 hours
+
+Commission        :RM 10.00
+Daily wages       :RM 40.00
+
+
+
+
+10%
+Enter the working hours:
+8
+Enter the sales generated:
+400
+Enter sales       :RM400
+Enter hours worked:8 hours
+
+Commission        :RM 40.00
+Daily wages       :RM 40.00
+
+
+
+
+
+15%
+Enter the working hours:
+8
+Enter the sales generated:
+600
+Enter sales       :RM600
+Enter hours worked:8 hours
+
+Commission        :RM 90.00
+Daily wages       :RM 40.00
