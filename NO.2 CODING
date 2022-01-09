@@ -1,0 +1,55 @@
+package first;
+import java.util.Scanner;
+public class LabTest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int h;
+		int w = 5;
+		int s;
+		double total;
+		
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Enter the working hours:");//ENTER THE NUMBER OF ITEM
+	    h = sc.nextInt();//ENTER THE NUMBER
+	    
+	    System.out.println("Enter the sales generated:");//ENTER THE PRICE OF ITEM
+	    s = sc.nextInt();//ENTER THE NUMBER
+	    
+	    System.out.println("Enter sales       :RM" + s);//PRINT OUT THE HOURS
+	    System.out.println("Enter hours worked:" + h +" hours");//PRINT OUT THE SALES
+	    
+	    total = h * w;
+	    
+	    System.out.println();
+	    		
+	    if ((0<=s)&&(s<=149)) {//no commission below RM150 SALES
+	    	double c = s * 0; 
+	    	System.out.printf("%-10s%3.2f%n","Commission        :RM " , c);
+	    	System.out.printf("%-10s%3.2f%n","Daily wages       :RM " , total);
+	    	
+	    }else if ((150<=s)&&(s<=300)) {//5% commission between RM150 UNTIL RM300 SALES
+	    	double c = s * 0.05;
+	    	System.out.printf("%-10s%3.2f%n","Commission        :RM " , c);
+	    	System.out.printf("%-10s%3.2f%n","Daily wages       :RM " , total);
+	    	
+	    }else if ((301<=s)&&(s<=500)) {//10% commission between RM301 UNTIL RM 500 SALES
+	    	double c = s * 0.1;
+	    	System.out.printf("%-10s%3.2f%n","Commission        :RM " , c);
+	    	System.out.printf("%-10s%3.2f%n","Daily wages       :RM " , total);
+	    	
+	    }else  {//15% commission above RM500 SALES
+	    	double c = s * 0.15;
+	    	System.out.printf("%-10s%3.2f%n","Commission        :RM " , c);
+	    	System.out.printf("%-10s%3.2f%n","Daily wages       :RM " , total);
+	    
+	    }
+	    
+	    sc.close();
+		
+		
+
+	}
+
+
+}
