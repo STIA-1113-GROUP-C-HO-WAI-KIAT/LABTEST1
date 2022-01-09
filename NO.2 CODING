@@ -1,0 +1,78 @@
+package first;
+import java.util.Scanner;
+
+public class LabTest1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int number;
+		int apple,bag,card;
+		int Q1,Q2,Q3;
+		double sum1;
+		
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Enter the maximum number of item:");//ENTER THE NUMBER OF ITEM
+	    number = sc.nextInt();//ENTER THE NUMBER
+	    
+	    System.out.println("Enter the price of the apple:");//ENTER THE PRICE OF ITEM
+	    apple = sc.nextInt();//ENTER THE PRICE 
+	    
+	    System.out.println("Enter the quantity of the apple:");//ENTER THE QUANTITY OF ITEM
+	    Q1 = sc.nextInt();//ENTER THE QUANTITY 
+	    
+	    System.out.println("Enter the price of the bag:");//ENTER THE PRICE OF ITEM
+	    bag = sc.nextInt();//ENTER THE PRICE 
+	    
+	    System.out.println("Enter the quantity of the bag:");//ENTER THE QUANTITY OF ITEM
+	    Q2 = sc.nextInt();//ENTER THE QUANTITY 
+		
+	    System.out.println("Enter the price of the card:");//ENTER THE PRICE OF ITEM
+	    card = sc.nextInt();//ENTER THE PRICE 
+	    
+	    System.out.println("Enter the quantity of the card:");//ENTER THE QUANTITY OF ITEM
+	    Q3 = sc.nextInt();//ENTER THE QUANTITY 
+      
+      
+      
+	    
+	 if ((Q1<=number) && (Q2<=number) && (Q3<=number)) { // MAXIMUM OF THE ITEM 
+   
+   
+	    System.out.println("Enter the number of item:" + number); // TO BECOME OUTPUT
+		  
+	    System.out.println("Enter the price of the apple:RM" + apple);//PRINT OUT THE PRICE OF ITEM
+	    System.out.println("Enter the quantity of the apple: " + Q1);//PRINT OUT THE QUANTITY OF ITEM
+	    
+	    System.out.println();//SPACE
+	    
+	    System.out.println("Enter the price of the bag:RM" + bag);//PRINT OUT THE PRICE OF ITEM
+	    System.out.println("Enter the quantity of the bag:" + Q2);//PRINT OUT THE QUANTITY OF ITEM
+	    
+	    System.out.println();// SPACE
+	    
+	    System.out.println("Enter the price of the school card:RM" + card);//PRINT OUT THE PRICE OF ITEM
+	    System.out.println("Enter the quantity of the school card:" + Q3);//PRINT OUT THE QUANTITY OF ITEM
+	    
+	    System.out.println();// SPACE
+	    
+	    sum1=(apple * Q1)+(bag * Q2)+(card * Q3);//CALCULATION OF THE TOTAL PRICE BEFORE DISCOUNT
+		  
+		if (sum1 < 100.00) { //DISCOUNT 10% IF SUM1 LESS THAN 100 
+			double discount1 = (sum1*10)/100; //DISCOUNT IN DECIMAL
+			double sum2 = sum1 - discount1; // SUM IN DECIMAL
+		       System.out.printf("%-10s%7.2f%n","Total price:RM" , sum1);// PRINT OUT TOTAL PRICE
+		       System.out.printf("%-10s%7.2f%n","Discount received:RM" , discount1);//PRINT OUT DISCOUNT
+		       System.out.printf("%-10s%7.2f%n","Price to be paid :RM" , sum2);//PRINT OUT PRICE TO PAID
+		       }
+		
+		if (sum1 > 100.00) {//DISCOUNT 20% IF SUM1 MORE THAN 100 
+			double discount2 = (sum1*20)/100; //DISCOUNT IN DECIMAL
+			double sum3 = sum1 - discount2;// SUM IN DECIMAL
+		       System.out.printf("%-10s%7.2f%n","Total price:RM" , sum1);// PRINT OUT TOTAL PRICE
+		       System.out.printf("%-10s%7.2f%n","Discount received:RM" , discount2);//PRINT OUT DISCOUNT
+		       System.out.printf("%-10s%7.2f%n","Price to be paid :RM" , sum3);//PRINT OUT PRICE TO PAID
+		       }	
+	    }
+	}
+
+}
