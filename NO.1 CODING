@@ -31,13 +31,8 @@ public class LabTest1 {
 	    
 	    System.out.println("Enter the quantity of the card:");//ENTER THE QUANTITY OF ITEM
 	    Q3 = sc.nextInt();//ENTER THE QUANTITY 
-      
-      
-      
 	    
 	 if ((Q1<=number) && (Q2<=number) && (Q3<=number)) { // MAXIMUM OF THE ITEM 
-   
-   
 	    System.out.println("Enter the number of item:" + number); // TO BECOME OUTPUT
 		  
 	    System.out.println("Enter the price of the apple:RM" + apple);//PRINT OUT THE PRICE OF ITEM
@@ -60,17 +55,17 @@ public class LabTest1 {
 		if (sum1 < 100.00) { //DISCOUNT 10% IF SUM1 LESS THAN 100 
 			double discount1 = (sum1*10)/100; //DISCOUNT IN DECIMAL
 			double sum2 = sum1 - discount1; // SUM IN DECIMAL
-		       System.out.printf("%-10s%7.2f%n","Total price:RM" , sum1);// PRINT OUT TOTAL PRICE
-		       System.out.printf("%-10s%7.2f%n","Discount received:RM" , discount1);//PRINT OUT DISCOUNT
-		       System.out.printf("%-10s%7.2f%n","Price to be paid :RM" , sum2);//PRINT OUT PRICE TO PAID
+		       System.out.printf("%-10s%3.2f%n","Total price      :RM" , sum1);// PRINT OUT TOTAL PRICE
+		       System.out.printf("%-10s%3.2f%n","Discount received:RM" , discount1);//PRINT OUT DISCOUNT
+		       System.out.printf("%-10s%3.2f%n","Price to be paid :RM" , sum2);//PRINT OUT PRICE TO PAID
 		       }
 		
 		if (sum1 > 100.00) {//DISCOUNT 20% IF SUM1 MORE THAN 100 
 			double discount2 = (sum1*20)/100; //DISCOUNT IN DECIMAL
 			double sum3 = sum1 - discount2;// SUM IN DECIMAL
-		       System.out.printf("%-10s%7.2f%n","Total price:RM" , sum1);// PRINT OUT TOTAL PRICE
-		       System.out.printf("%-10s%7.2f%n","Discount received:RM" , discount2);//PRINT OUT DISCOUNT
-		       System.out.printf("%-10s%7.2f%n","Price to be paid :RM" , sum3);//PRINT OUT PRICE TO PAID
+		       System.out.printf("%-10s%3.2f%n","Total price      :RM" , sum1);// PRINT OUT TOTAL PRICE
+		       System.out.printf("%-10s%3.2f%n","Discount received:RM" , discount2);//PRINT OUT DISCOUNT
+		       System.out.printf("%-10s%3.2f%n","Price to be paid :RM" , sum3);//PRINT OUT PRICE TO PAID
 		       }	
 	    }
 	}
