@@ -1,0 +1,27 @@
+Enter the maximum number of item:
+3
+Enter the price of the apple:
+10
+Enter the quantity of the apple:
+3
+Enter the price of the bag:
+30
+Enter the quantity of the bag:
+2
+Enter the price of the card:
+10
+Enter the quantity of the card:
+3
+Enter the number of item:3
+Enter the price of the apple:RM10
+Enter the quantity of the apple: 3
+
+Enter the price of the bag:RM30
+Enter the quantity of the bag:2
+
+Enter the price of the school card:RM10
+Enter the quantity of the school card:3
+
+Total price:RM 120.00
+Discount received:RM  24.00
+Price to be paid :RM  96.00
